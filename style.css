@@ -1,0 +1,163 @@
+html,
+body {
+  margin: 0;
+}
+
+html {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  height: inherit;
+}
+
+#canvas {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 0;
+}
+
+#shipCanvas {
+  visibility: hidden;
+  position: relative;
+  top: 250px;
+  left: 250px;
+  z-index: 0;
+}
+#StartGame {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+  background-image: url(https://s-i.huffpost.com/gen/2040954/images/o-ASTEROID-HITS-EARTH-facebook.jpg);
+  background-size: cover;
+}
+
+#GameOver {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+  background-image: url(https://progress.online/sites/default/files/imgs/articles/2018/02/2537/kak_zashhitit_zemlju_ot_stolknovenija_s_asteroidom.jpg);
+  background-size: cover;
+}
+
+#Start {
+  display: block;
+  background-color: #333;
+  width: 30%;
+  height: 60px;
+  color: white;
+  font-size: 25px;
+  margin: auto;
+  margin-top: 12%;
+  border-color: rgb(173, 177, 194);
+  border-width: 10px;
+  background: url("http://en.es-static.us/upl/2012/11/M42_orion_nebula.jpg") no-repeat scroll 0 0 transparent;
+}
+
+#Reset {
+  display: block;
+  background-color: #333;
+  width: 30%;
+  height: 60px;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  margin: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border-color: rgb(173, 177, 194);
+  border-width: 10px;
+  background: url("http://www.textures4photoshop.com/tex/thumbs/free-magma-rock-texture-seamless-71.jpg") no-repeat scroll 0 0 transparent;
+}
+
+
+#Level {
+  display: block;
+  position: relative;
+  background-color: #333;
+  width: 30%;
+  height: 60px;
+  color: white;
+  font-size: 25px;
+  margin: auto;
+  margin-top: 0.95%;
+  border-color: rgb(173, 177, 194);
+  border-width: 10px;
+  background: url("http://en.es-static.us/upl/2012/11/M42_orion_nebula.jpg") no-repeat scroll 0 0 transparent;
+}
+
+#UpgradeWeapon {
+  display: block;
+  position: relative;
+  width: 25%;
+  height: 80px;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  border-color: rgb(173, 177, 194);
+  border-width: 10px;
+  background: url("https://thumbs.dreamstime.com/b/solidified-lava-texture-eruption-volcano-textures-40692074.jpg") no-repeat scroll 0 0 transparent;
+}
+#UpgradeShipSpeed{
+  display: block;
+  position: relative;
+  width: 25%;
+  height: 80px;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  margin: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border-color: rgb(173, 177, 194);
+  border-width: 10px;
+  background: url("https://thumbs.dreamstime.com/b/solidified-lava-texture-eruption-volcano-textures-40692074.jpg") no-repeat scroll 0 0 transparent;
+}
+#UpgradeShipHandling{
+  display: block;
+  position: relative;
+  width: 25%;
+  height: 80px;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  margin: auto;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  border-color: rgb(173, 177, 194);
+  border-width: 10px;
+  background: url("https://thumbs.dreamstime.com/b/solidified-lava-texture-eruption-volcano-textures-40692074.jpg") no-repeat scroll 0 0 transparent;
+}
+
+#ShipLife {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 100px;
+  margin: 0;
+  font-size: 20px;
+  color: rgb(234, 234, 238);
+}
+#score {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  margin: 0;
+  font-size: 20px;
+  color: rgb(234, 234, 238);
+}
