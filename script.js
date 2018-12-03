@@ -12,17 +12,17 @@ var score = document.getElementById('score');
 
 
 var backgroundImage = new Image();
-backgroundImage.src = 'https://www.walldevil.com/wallpapers/w01/433850-dark-landscapes-night-sky-skyline-space-stars.jpg';
+backgroundImage.src = './assets/stars.jpg';
 
 var ship1Image = new Image();
-ship1Image.src = 'https://i.pinimg.com/originals/5b/d9/89/5bd98917f680e1330c1852ab8b979374.png';
+ship1Image.src = './assets/spaceShip.png';
 
 
 var meteoriteImage = new Image();
-meteoriteImage.src = 'https://pre00.deviantart.net/c501/th/pre/i/2013/130/f/0/asteroid_stock_3_by_fimar-d64qqfu.png';
+meteoriteImage.src = './assets/asteroid.png';
 
 var circlePaternImage = new Image();
-circlePaternImage.src = "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX2277355.jpg";
+circlePaternImage.src = "./assets/lava-pattern.jpg";
 var circlePatern = ctx.createPattern(circlePaternImage, "repeat");
 
 
@@ -175,25 +175,25 @@ let frameCounter = 1;
 let shipRotateSpeed = 0;
 let ship1Speed = ship1.speed;
 let bulletImage = new Image();
-bulletImage.src = 'http://www.freepngimg.com/download/fire/2-fire-transparent-png-image.png';
+bulletImage.src = './assets/bullet1.png';
 
 let bullet2Image = new Image();
-bullet2Image.src = "http://i.imgur.com/sN4aI5Q.png";
+bullet2Image.src = "./assets/bullet2.png";
 
 let bullet3Image = new Image();
-bullet3Image.src = "https://cdn140.picsart.com/237839597016212.png?r240x240";
+bullet3Image.src = "./assets/bullet3.png";
 
 let protectiveCircle = new Image();
-protectiveCircle.src = "https://opengameart.org/sites/default/files/spr_shield.png";
+protectiveCircle.src = "./assets/shield.png";
 
 let engineImage = new Image();
-engineImage.src = 'https://ak5.picdn.net/shutterstock/videos/34393345/thumb/2.jpg';
+engineImage.src = './assets/engine.jpg';
 
 let explosionBulletImage = new Image();
-explosionBulletImage.src = "http://pic.90sjimg.com/design/01/29/88/90/59115ddf91d9e.png";
+explosionBulletImage.src = "./assets/bulletExplosion.png";
 
 let explosionMeteoriteImage = new Image();
-explosionMeteoriteImage.src = "http://dailyslack.com/wp-content/uploads/2012/02/explosion-1.png";
+explosionMeteoriteImage.src = "./assets/meteoriteExplosion.png";
 
 var numberMeteorites = [];
 let maxNrMeteorites = 0;

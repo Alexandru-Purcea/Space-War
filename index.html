@@ -1,0 +1,33 @@
+<!-- './assets/backgroundHome.jpg' -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Space battle</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="StartGame">
+    <button id="Start" onclick="gameOver()">Start Game</button>
+  </div>
+  <div id="GameOver">
+    <button id="UpgradeWeapon" onclick="upgradeWeapon()">Upgrade weapon</button>
+    <button id="UpgradeShipSpeed" onclick="upgradeShipSpeed()">Upgrade speed</button>
+    <button id="UpgradeShipHandling" onclick="upgradeShipHandling()">Upgrade handling</button>
+    <button id="Level" onclick="survival()">Survival</button>
+    <button id="Level" onclick="level1()">Level 1</button>
+    <button id="Level" onclick="level2()">Level 2</button>
+    <button id="Level" onclick="level3()">Level 3</button>
+    <button id="Reset" onclick="reset()">Reset</button>
+  </div>
+  <canvas id='canvas'></canvas>
+  <p id="ShipLife"></p>
+  <p id="score"></p>
+  <canvas id='shipCanvas'></canvas>
+  <script src="script.js"></script>
+</body>
+
+</html>
